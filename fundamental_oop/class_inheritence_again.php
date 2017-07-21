@@ -15,7 +15,7 @@ class College extends School
 {
     
 }
-
+//
 $clg = new College();
 
  echo $clg->room_no;
