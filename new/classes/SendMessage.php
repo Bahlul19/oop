@@ -5,5 +5,4 @@ interface SendMessage
     public function notification();
 }
 
-
 ?>
