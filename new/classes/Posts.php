@@ -4,7 +4,7 @@ class Posts implements Iterator
 {
     public $posts = array();
     
-     public $var; 
+    public $var; 
     
     public function __construct()
     {
