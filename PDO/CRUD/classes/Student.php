@@ -1,6 +1,6 @@
 <?php
-
-include('db.php');
+/*
+include('DB.php');
 
 class Student
 {
@@ -8,11 +8,29 @@ class Student
     public function readAll()
     {
         $sql = "SELECT * FROM $this->table";
-        $stmt = DB::prepareOwn($sql);
+        $stmt = DB::prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll();
     }
     
+}
+*/
+
+
+
+include('DB.php');
+
+class Student
+{
+    private $table = 'tbl_student';
+    
+    public function readAll()
+    {
+        $sql = "SELECT * FROM $this->table";    
+        $stmt = DB::prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }
 }
 
 ?>
