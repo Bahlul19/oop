@@ -2,6 +2,7 @@
 
 include('header.php');
 
+
 spl_autoload_register(function($class_name){
    include("./classes/".$class_name.".php"); 
 });
@@ -9,7 +10,9 @@ spl_autoload_register(function($class_name){
 ?>
 
 
-<?php $user = new Student(); ?>
+<?php 
+$user = new Student(); 
+?>
 
 
 <div class="col-md-4"></div>
@@ -28,7 +31,7 @@ spl_autoload_register(function($class_name){
         
         <?php
         
-        foreach($user->realAll() as $key => $value)
+        foreach($user->readAll() as $key => $value)
         {
         ?>  
         

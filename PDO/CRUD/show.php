@@ -8,11 +8,15 @@ spl_autoload_register(function($class){
 
 ?>
 
+
 <?php
 
 $user = new Student();
 
-//access student class ny this object
+//access student class by this object
+
+
+//insert the query by this condition
 
 ?>
 

@@ -5,14 +5,41 @@ include('DB.php');
 class Student 
 {
     private $table = 'tbl_student';
+    private $name;
+    private $department;
+    private $age;
     
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+    
+     public function setDepartment($department)
+    {
+        $this->department = $department;
+    }
+    
+     public function setAge($age)
+    {
+          $this->age = $age;
+    }
+    
+    public function insert()
+    {
+        $sql = "INSERT INTO $this->table(name,department,age)VALUES(:name, :department, :age)";
+        $stmt = DB::prepare($sql);
+        $stmt->bindParam(':name',$this->name);
+        $stmt->bindParam(':department',$this->department);
+        $stmt->bindParam(':age',$this->age);
+        return $stmt->execute();
+    }
+
     public function readAll()
     {
-        $sql = "SELECT * FROM $this->table";
-        $stmt = DB::prepareOwn($sql);
-        //own create method
+        $sql = "SELECT * FROM $this->table";   
+        $stmt = DB::prepare($sql);
         $stmt->execute();
-        return $stmt->fetchAll();  
+        return $stmt->fetchAll();
     }
 }
 

@@ -1,5 +1,40 @@
 <?php
 include('header.php');
+
+spl_autoload_register(function($class){
+   include("classes/".$class.".php"); 
+});
+?>
+
+<?php
+
+$user = new Student(); 
+
+//word should be done under $user object
+
+if(isset($_POST['submit']))
+{
+    $name = $_POST['name'];
+    $department = $_POST['department'];
+    $age = $_POST['age'];
+    
+    $user->setName($name);
+    $user->setDepartment($department);
+    $user->setAge($age);
+    
+    if($user->insert())
+    {
+                  echo "       
+   <p class='alert alert-success'>Data Inserted Successfully</p>.
+           ";
+        }
+        else 
+        {
+            echo "
+            <p class='alert alert-danger'>Query Failed,please check</p>";       
+        }
+    }
+
 ?>
 
 
