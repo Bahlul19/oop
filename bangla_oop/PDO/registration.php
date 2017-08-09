@@ -41,7 +41,7 @@ if(isset($_POST['submit']))
 <div class="col-md-4"></div>
 <div class="col-md-4">
 
-    <h3>Please Fill Up Form</h3>
+    <h3>Please Fill Up Student Form</h3>
 
     <form action="" method="post" enctype="multipart/form-data">
 

@@ -2,9 +2,9 @@
 
 <?php
 
-class Student extends Main
+class Teacher extends Main
 {
-    protected $table = 'tbl_student';
+    protected $table = 'tbl_teacher';
     
     private $name;
     private $department;

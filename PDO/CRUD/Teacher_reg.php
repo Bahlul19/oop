@@ -7,7 +7,7 @@ include('header.php');
        include("classes/".$class.".php"); 
     });
     
-    $user = new Student();
+    $user = new Teacher();
 
     if(isset($_POST['submit']))
     {
@@ -46,7 +46,7 @@ include('header.php');
 <div class="col-md-4"></div>
 <div class="col-md-4">
 
-    <h3>Please Fill Up Student Form</h3>
+    <h3>Please Fill Up Teacher Form</h3>
 
     <form action="" method="post" enctype="multipart/form-data">
 

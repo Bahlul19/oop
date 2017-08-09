@@ -7,9 +7,9 @@ include('Main.php');
 //don't need to include DB.php main class ke amra extend kore felchi tai
 // r lagbe na database include kora
 
-class Student extends Main
+class Teacher extends Main
 {
-    protected $table = 'tbl_student';
+    protected $table = 'tbl_teacher';
     
     private $name;
     private $department;
