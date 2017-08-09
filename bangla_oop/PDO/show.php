@@ -3,15 +3,15 @@
 include('header.php');
 
 
-spl_autoload_register(function($class_name){
-   include("./classes/".$class_name.".php"); 
+spl_autoload_register(function($class){
+   include("classes/".$class.".php"); 
 });
 
 ?>
 
 
 <?php 
-$user = new Student(); 
+$user1 = new Student(); 
 ?>
 
 
@@ -27,11 +27,13 @@ $user = new Student();
             <th>Name:</th>
             <th>Department:</th>
             <th>Age:</th>
+            <th>Update</th>
+            <th>Remove</th>
         </tr>
         
         <?php
         
-        foreach($user->readAll() as $key => $value)
+        foreach($user1->readAll() as $key => $value)
         {
         ?>  
         
@@ -41,6 +43,19 @@ $user = new Student();
             <td> <?= $value['name'];?></td>
             <td> <?= $value['department'];?></td>
             <td> <?= $value['age'];?></td>
+            
+            <td> 
+            <?php
+echo "<a href='edit.php?id=".$value['id']."'>EDIT</a>";
+            ?>
+            </td>
+
+            <td> 
+              <?php
+echo "<a href='delete.php?id=".$value['id']."'>DELETE</a>";
+            ?>
+            </td>
+
             
         </tr>
       

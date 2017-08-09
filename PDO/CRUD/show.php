@@ -30,6 +30,8 @@ $user = new Student();
             <th>Name</th>
             <th>Department</th>
             <th>Age</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
     <?php
     
@@ -41,10 +43,17 @@ $user = new Student();
             <td><?= $value['name']; ?></td>
             <td><?= $value['department']; ?></td>
             <td><?= $value['age']; ?></td>
+            <td>
+<?php echo "<a href='edit.php?id=".$value['id']."'>EDIT</a>" ?>               
+            </td>
+            <td>
+<?php echo "<a href='delete.php?id=".$value['id']."'>DELETE</a>" ?>                
+            </td>
         </tr>
         
     <?php }?>
-    
+        
+        
     </table>
     </div>
 <div class="col-md-4"></div>
