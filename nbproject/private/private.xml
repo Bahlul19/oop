@@ -3,11 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/xampp/htdocs/advance/bangla_oop/PDO/show.php</file>
-            <file>file:/E:/xampp/htdocs/advance/bangla_oop/PDO/classes/Student.php</file>
-            <file>file:/E:/xampp/htdocs/advance/bangla_oop/PDO/classes/DB.php</file>
-            <file>file:/E:/xampp/htdocs/advance/bangla_oop/PDO/classes/config.php</file>
-            <file>file:/E:/xampp/htdocs/advance/bangla_oop/PDO/registration.php</file>
+            <file>file:/E:/xampp/htdocs/advance/PDO/CRUD/Teacher_reg.php</file>
+            <file>file:/E:/xampp/htdocs/advance/PDO/CRUD/Teacher_edit.php</file>
+            <file>file:/E:/xampp/htdocs/advance/PDO/CRUD/classes/Student.php</file>
+            <file>file:/E:/xampp/htdocs/advance/PDO/CRUD/classes/Main.php</file>
+            <file>file:/E:/xampp/htdocs/advance/PDO/CRUD/registration.php</file>
+            <file>file:/E:/xampp/htdocs/advance/PDO/CRUD/classes/Teacher.php</file>
+            <file>file:/E:/xampp/htdocs/advance/PDO/CRUD/header.php</file>
+            <file>file:/E:/xampp/htdocs/advance/PDO/CRUD/show.php</file>
+            <file>file:/E:/xampp/htdocs/advance/PDO/CRUD/Teacher_show.php</file>
         </group>
     </open-files>
 </project-private>
